@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using aspNetPractice.Models;
 
 namespace aspNetPractice.Data
 {
@@ -12,5 +13,6 @@ namespace aspNetPractice.Data
             : base(options)
         {
         }
+        public DbSet<aspNetPractice.Models.Joke> Joke { get; set; }
     }
 }
